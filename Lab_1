@@ -1,0 +1,24 @@
+1.0
+a)
+Content-Length: 14
+Content-Type: text/plain
+Server: nginx/1.2.2
+b)
+Content-Length: 335525
+Content-Type: image/png
+Server: nginx/1.2.2
+c)
+Content-Length: 1137202
+Content-Type: application/octet-stream
+Server: nginx/1.2.2
+
+2.0
+a) Status Code: 404 Not Found - код ошибки (Ресурс не найден) - разместить файл на сервере
+b) Status Code: 200 OK (from disk cache) - спецаиальное поведение (OK)
+c) Status Code: 302 Found - специальное поведение (русурс отсутсвует временно)
+d) Status Code: 400 Work hard - код ошибки (Плохой запрос от клиента) - Выполнить запрос http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard
+
+3.0
+В ответах сервера заголовок Content-Type сообщает клиенту, какой будет тип передаваемого контента.(В нашем слусае, указывается кодировка)
+В некоторых случаях браузеры пытаются сами определить MIME тип передаваемого контента, но их реакция может быть неадекватной.
+Ошибка в кодировке, charset='utf-8' занести в <meta>
