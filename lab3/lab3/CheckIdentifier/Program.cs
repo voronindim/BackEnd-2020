@@ -6,22 +6,24 @@ namespace CheckIdentifier
     {
         public static bool CheckIdentifier(string ident)
         {
-            if (ident[0] >= 'A' && ident[0] <= 'Z' || ident[0] >= 'a' && ident[0] <= 'z')
+            if ((ident[0] >= 'A' && ident[0] <= 'Z' || ident[0] >= 'a' && ident[0] <= 'z') && (ident != ""))
             {
                 for (int i = 1; i < ident.Length; i++)
                 {
                     if (!(ident[i] >= 'A' && ident[i] <= 'Z' || ident[i] >= 'a' && ident[i] <= 'z' ||
-                        ident[i] >= '1' && ident[i] <= '9'))
+                        ident[i] >= '0' && ident[i] <= '9'))
                     {
                         Console.WriteLine("No");
                         Console.WriteLine("Встречен неизвестный символ в строке" + "\'" + ident[i] + "\'");
                         return false;
                     }
                 }
+                Console.WriteLine("Yes");
+                return true;
             }
-            Console.WriteLine("Yes");
-            return true;
-        }
+            Console.WriteLine("No");
+            return false;
+            }
         
         public static bool ParseArg(string[] args)
         {
