@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PasswordStrength;
 
-namespace PasswordStrengthTests
+namespace CheckPasswordStrengthTests
 {
     [TestClass]
-    public class PasswordStrengthTests
+    public class UnitTest
     {
         [TestMethod]
         public void CalculateByLength_password_returnedPasswordStrenght()
