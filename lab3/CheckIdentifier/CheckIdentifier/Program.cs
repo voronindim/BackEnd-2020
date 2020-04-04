@@ -1,8 +1,8 @@
 ﻿using System;
 namespace CheckIdentifier
 {
-    
-    internal class Program
+
+    public class Program
     {
         public static bool CheckIdentifier(string ident)
         {
@@ -23,8 +23,8 @@ namespace CheckIdentifier
             }
             Console.WriteLine("No");
             return false;
-            }
-        
+        }
+
         public static bool ParseArg(string[] args)
         {
             if (args.Length == 1)
@@ -33,7 +33,7 @@ namespace CheckIdentifier
             }
             return false;
         }
-        
+
         public static int Main(string[] args)
         {
             if (!ParseArg(args))
