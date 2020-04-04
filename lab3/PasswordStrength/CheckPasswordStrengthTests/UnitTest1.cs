@@ -7,11 +7,12 @@ namespace CheckPasswordStrengthTests
     public class UnitTest1
     {
         [TestMethod]
-        public void CalculateByLength_with_correct_password()
+        public void CalculateByLength_password_returnedPasswordStrenght()
         {
             string password = "ab1";
             int sum = 12;
             Assert.AreEqual(sum, Program.CalculateByLenght(ref password));
+
 
             password = "";
             sum = 0;
@@ -19,7 +20,7 @@ namespace CheckPasswordStrengthTests
         }
 
         [TestMethod]
-        public void CalculateByDigitsAmount_()
+        public void CalculateByDigitsAmount_password_returnedPasswordStrenght()
         {
             string password = "abc11";
             int sum = 8;
@@ -32,7 +33,7 @@ namespace CheckPasswordStrengthTests
         }
 
         [TestMethod]
-        public void CalculateByUpperLettersAmount_()
+        public void CalculateByUpperLettersAmount_password_returnedPasswordStrenght()
         {
             string password = "aAc11";
             int sum = 8;
@@ -45,7 +46,7 @@ namespace CheckPasswordStrengthTests
         }
 
         [TestMethod]
-        public void CalculateLowerCaseLettersAmount_()
+        public void CalculateLowerCaseLettersAmount_password_returnedPasswordStrenght()
         {
             string password = "AcA11";
             int sum = 8;
@@ -59,7 +60,7 @@ namespace CheckPasswordStrengthTests
 
 
         [TestMethod]
-        public void CalculateByOnlyDigits_()
+        public void CalculateByOnlyDigits_password_returnedPasswordStrenght()
         {
             string password = "1122";
             int sum = -4;
@@ -72,7 +73,7 @@ namespace CheckPasswordStrengthTests
         }
 
         [TestMethod]
-        public void CalculateByOnlyLetters_()
+        public void CalculateByOnlyLetters_password_returnedPasswordStrenght()
         {
             string password = "aabbcc";
             int sum = -6;
@@ -85,7 +86,7 @@ namespace CheckPasswordStrengthTests
         }
 
         [TestMethod]
-        public void CalculateByReapetedCharacters_()
+        public void CalculateByReapetedCharacters_password_returnedPasswordStrengh()
         {
             string password = "abcd1a";
             int sum = -2;
