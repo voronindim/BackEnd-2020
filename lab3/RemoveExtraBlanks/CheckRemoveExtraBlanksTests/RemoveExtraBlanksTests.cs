@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RemoveExtraBlanks;
 
-namespace CheckRemoveExtraBlanksTests
+namespace RemoveExtraBlanksTests
 {
     [TestClass]
-    public class UnitTest1
+    public class RemoveExtraBlanksTests
     {
         [TestMethod]
         public void RemoveExtraBlanks_String_WithExtraBlanks()

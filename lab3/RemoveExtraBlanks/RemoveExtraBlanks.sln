@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanks", "RemoveExtraBlanks\RemoveExtraBlanks.csproj", "{38AFB4E9-6A7C-4230-B1DB-C61DE01A1534}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckRemoveExtraBlanksTests", "CheckRemoveExtraBlanksTests\CheckRemoveExtraBlanksTests.csproj", "{3B63D5A4-8383-4B19-B1DA-9309568BD52A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanksTests", "CheckRemoveExtraBlanksTests\RemoveExtraBlanksTests.csproj", "{3B63D5A4-8383-4B19-B1DA-9309568BD52A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
